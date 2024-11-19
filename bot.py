@@ -1,3 +1,5 @@
+import os
+
 from aiogram import Bot, Dispatcher, Router, types
 from aiogram.filters import Command
 from aiogram.fsm.context import FSMContext
@@ -7,7 +9,7 @@ from coingecko_api import CoinGeckoAPI
 from repository import SQLiteRepository
 import asyncio
 
-API_TOKEN = '7949340966:AAEmCSueXufG81e1a0fbg1WABsHk_KmeFwQ'
+API_TOKEN = os.getenv('TELEGRAM_TOKEN')
 
 # Initialize bot and router
 bot = Bot(token=API_TOKEN)
