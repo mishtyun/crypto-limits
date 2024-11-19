@@ -1,0 +1,22 @@
+# system files
+.vscode
+.idea
+.DS_Store
+
+ .mypy_cache/
+ __pycache__/
+*.pyc
+*.db
+
+# env files
+.env
+
+# working files
+*/ignore*
+ignore/
+
+# all volumes
+*data
+
+# static data
+static/*
